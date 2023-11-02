@@ -1,3 +1,4 @@
+#Sets WD to local file location, edit to path to wherever iris.csv is located
 setwd("/Users/mark/Desktop/Biocomputing_2023/Excercise7")
 # Read .csv file and store variable
 iris <- read.csv("iris.csv")
