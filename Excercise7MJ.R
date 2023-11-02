@@ -1,3 +1,4 @@
+setwd("/Users/mark/Desktop/Biocomputing_2023/Excercise7")
 # Read .csv file and store variable
 iris <- read.csv("iris.csv")
 
@@ -15,5 +16,4 @@ mat = matrix(1:50, nrow = 10, ncol = 5),
  # A vector containing three letters
 let = c("a", "b", "c"))
 print(my_list)
-
 
