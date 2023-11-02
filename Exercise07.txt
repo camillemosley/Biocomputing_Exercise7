@@ -1,0 +1,44 @@
+# Exercise 07
+# 2023/11/02
+
+# set work directory and read data frame 
+setwd("C:\\Users\\debit\\Downloads\\Stem decay project")
+iris <- read.csv("iris.csv")
+
+# Question 1: Write R code that will convert the comma-delimited iris.csv file to a tab-delimited 
+version names iris.txt
+
+# write to a txt file from csv file
+write.table(iris,"iris.txt",row.names=FALSE,sep="\t")
+
+
+#Provide R code that creates a list of length5. The list should contain the following elements: 1) a 
+vector with length 10 conatining 100,200,....1000; 2) a two-row, two-column data frame with
+#the team names and final score from last week's Notre Dame football game, 3) the number 999, 4) a 
+10-row, 5-column matrix containing integers from 1 to 50, and 5) a vector containing three letters
+
+#1) a vector with length 10 conatining 100,200,....1000
+vectorNum <- c(100,200,300,400,500,600,700,800,900,1000)
+
+#2) a two-row, two-column data frame with the team names and final score from last week's Notre Dame 
+football game
+score <- c(7,58)
+colnames <- c(Pittsburg","Notre Dame")
+team <- matrix(data=c(colnames, score), nrow=2, ncol=2)
+
+# 3) the number 999
+number <- 999
+
+# 4) a 10-row, 5-column matrix containing integers from 1 to 50
+matrix <- matrix(data=1:50, nrow=10, ncol =5)
+
+# 5) a vector containing three letters
+vectorLet <- c("a","b","c")
+
+# list 1,2,3,4,5 in a dataframeumber = number,
+  mat = matrix, 
+  Vec2 = vectorLet
+  
+)
+
+length(my
