@@ -1,0 +1,34 @@
+---
+title: "Exercise 7"
+output: html_document
+date: "2023-11-03"
+---
+
+### 1. Write R code that will convert the comma-delimited iris.csv file to a tab-delimited version names iris.txt.
+
+```{r}
+# reading file into R
+iris = read.csv("iris.csv")
+
+# writing file as a tsv file
+write.table(iris, file = "iris.txt", sep = "\t", row.names = F)
+```
+
+
+### 2. Provide R code that creates a list of length 5. The list should contain the following elements: 1) a vector with length 10 containing 100, 200, . . . , 1000; 2) a two-row, two-column data frame with the team names and final score from last week’s Notre Dame football game, 3) the number 999, 4) a 10-row, 5-column matrix containing integers from 1 to 50, and 5) a vector containing three letters.
+
+```{r}
+# Creating an empty list
+my_list = list()
+
+# Assigning objects to the list
+my_list[[1]] = seq(100, 1000, 100)
+my_list[[2]] = data.frame(Team = c("Pittsburgh Panthers", "Notre Dame"), Score = c(7, 58))
+my_list[[3]] = 999
+my_list[[4]] = matrix(1:50, nrow = 10, ncol = 5)
+my_list[[5]] = c("A", "B", "C")
+
+# Printing the list
+my_list
+```
+
